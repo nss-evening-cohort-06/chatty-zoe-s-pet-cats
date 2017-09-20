@@ -1,16 +1,15 @@
+/*Main CSS*/
 
+/*Twilight Zone Mode aka Make it Dark*/
+.twilightZoneMode {
+	background-color: black;
+	color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/*Make It Bigger*/
+.makeItBigger {
+	font-size: 10em;
+}
 
 .outputContainer {
 	background:#A2A2A2;
