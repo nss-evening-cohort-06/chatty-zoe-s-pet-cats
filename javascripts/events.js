@@ -2,12 +2,17 @@
 
 const printDom = require("./dom");
 
-const submit = document.getElementById("chatButton");
+const submit = document.getElementById("submit");
+
+const inputText = document.getElementById("inputText");
 
 
-const submitMessage = () => {
-submit.addEventListener("click", printDom);
-console.log(printDom);
+const submitMessage = (e) => {
+	submit.addEventListener("click", (e) => {
+	console.log("submitMessage", e);
+	printDom();
+	});
+
 };
 
 
@@ -16,9 +21,9 @@ console.log(printDom);
 
 
 
-
-
-
-module.exports = {
+const events = {
 	submitMessage
 };
+
+
+module.exports = events;
