@@ -26,7 +26,6 @@ const printToDom = (domString) => {
 };
 
 
-//console.log("print to dom", );
 
 
 module.exports = printToDom;

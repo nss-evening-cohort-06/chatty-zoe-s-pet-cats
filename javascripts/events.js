@@ -6,6 +6,8 @@ const submit = document.getElementById("submit");
 
 const inputText = document.getElementById("inputText");
 
+const remove = document.getElementById("delete");
+
 
 const submitMessage = (e) => {
 	submit.addEventListener("click", (e) => {
@@ -15,6 +17,14 @@ const submitMessage = (e) => {
 
 };
 
+const writeWordsOnEnter = (e) => {
+	submit.addEventListener("keypress", (e) => {
+		if(e.keyCode === 13){
+			printDom();
+		}
+	});
+};
+
 
 
 
@@ -22,8 +32,7 @@ const submitMessage = (e) => {
 
 
 const events = {
-	submitMessage
+	submitMessage, writeWordsOnEnter
+ 
 };
-
-
 module.exports = events;
