@@ -1,7 +1,8 @@
 "use strict"; 
 
+// JS for "Twilight Zone Mode" checkbox
 let outputDark = document.getElementById('output-dark');
-var checkbox = document.querySelector("input[name=checkbox]");
+let checkbox = document.querySelector("input[name=checkbox]");
 
 checkbox.addEventListener( 'change', function() {
     if(this.checked) {
@@ -12,3 +13,7 @@ checkbox.addEventListener( 'change', function() {
         outputDark.classList.remove("twilight-zone-mode");
     }
 });
+
+
+// JS for "Make Text Bigger" checkbox
+ 
