@@ -26,4 +26,7 @@ const printToDom = () => {
 comments.loadComments();
 
 
-module.exports = {printToDom};
+
+module.exports = buildDomString;
+
+
