@@ -69,6 +69,8 @@ checkboxTwo.addEventListener( 'change', function() {
 
 
 
+
+
 // //delete button function
 const deleteMessage = (e) => {
 	outputText.addEventListener('click', deleteMessage);
