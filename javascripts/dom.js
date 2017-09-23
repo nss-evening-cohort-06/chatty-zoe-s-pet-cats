@@ -1,36 +1,32 @@
 "use strict";
 
-//const dom = require("./events");
-
+let comments = require('./data');
 let words = document.getElementById("inputText");
 let outputDiv = document.getElementById("message");
 
 const buildDomString = (statement) => {
 	
 	let domString = "";
-	domString += `<div>${statement}`;
-	domString += `<button type="button" class="btn btn-danger delete">Vanish</button>`;
-	domString += `<button type="button" class="btn btn-warning edit">Edit</button>`;
+	domString += `<div>${words.value}`;
+	domString += `<button type="button" id="delete" class="btn btn-danger">Vanish</button>`;
+	domString += `<button type="button" id="edit" class="btn btn-warning">Edit</button>`;
 	domString += `</div>`;
-
-	printToDom(domString);
+	return domString;
 };
 
 
 
-const printToDom = (domString) => {
-	outputDiv.innerHTML += domString;
+const printToDom = () => {
+	let statementDomString = buildDomString();
+	outputDiv.innerHTML += statementDomString;
 	words.value = "";
 	
 };
 
+comments.loadComments();
 
 
 
 module.exports = buildDomString;
-
-
-
-
 
 
