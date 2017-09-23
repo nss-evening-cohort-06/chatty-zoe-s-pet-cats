@@ -16,3 +16,7 @@ checkbox.addEventListener( 'change', function() {
 });
 
 runEvents.submitMessage();
+runEvents.writeWordsOnEnter();
+runEvents.clearTextBox();
+runEvents.deleteMessage();
+

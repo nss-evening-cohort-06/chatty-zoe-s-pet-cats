@@ -9,8 +9,8 @@ const buildDomString = (statement) => {
 	
 	let domString = "";
 	domString += `<div>${words.value}`;
-	domString += `<button type="button" id="delete" class="btn btn-danger">Vanish</button>`;
-	domString += `<button type="button" id="edit" class="btn btn-warning">Edit</button>`;
+	domString += `<button type="button" class="btn btn-danger delete">Vanish</button>`;
+	domString += `<button type="button" class="btn btn-warning edit">Edit</button>`;
 	domString += `</div>`;
 
 	return domString;
