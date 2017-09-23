@@ -1,16 +1,5 @@
 /*Main CSS*/
 
-/*Twilight Zone Mode aka Make it Dark*/
-.twilight-zone-mode {
-	background-color: black;
-	color: white;
-}
-
-/*Make It Bigger*/
-.makeItBigger {
-	font-size: 10em;
-}
-
 .outputContainer {
 	background:#A2A2A2;
 	position:fixed;
@@ -22,4 +11,15 @@
     padding: 4em 0 0 0;
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+/*Twilight Zone Mode aka Make it Dark*/
+.twilight-zone-mode {
+	background-color: black;
+	color: white;
+}
+
+/*Make It Bigger*/
+.makeItBigger {
+	font-size: 10em;
 }
