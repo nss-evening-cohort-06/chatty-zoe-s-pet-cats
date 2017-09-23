@@ -15,16 +15,16 @@ const outputText = document.getElementById("message");
 const submitMessage = (e) => {
 	submit.addEventListener("click", (e) => {
 	console.log("submitMessage", e);
-	printDom();
+	printDom(inputText.value);
 	});
 
 };
 
 const writeWordsOnEnter = (e) => {
-	submit.addEventListener("keypress", (e) => {
+	inputText.addEventListener("keypress", (e) => {
 		if(e.keyCode === 13){
 			console.log("enter", e);
-			printDom();
+			printDom(inputText.value);
 		}
 	});
 };
