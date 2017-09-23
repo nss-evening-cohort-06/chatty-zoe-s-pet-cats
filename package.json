@@ -1,0 +1,26 @@
+{
+  "name": "chatty-zoe-s-pet-cats",
+  "version": "1.0.0",
+  "description": "* Use Bootstrap\r * Complete 1 of the bonus items\r * Balanced github contributions\r * Completed Readme\r * No grunt errors\r * Use Browserify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nss-evening-cohort-06/chatty-zoe-s-pet-cats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nss-evening-cohort-06/chatty-zoe-s-pet-cats/issues"
+  },
+  "homepage": "https://github.com/nss-evening-cohort-06/chatty-zoe-s-pet-cats#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jshint-stylish": "^2.2.1",
+    "matchdep": "^2.0.0"
+  }
+}
