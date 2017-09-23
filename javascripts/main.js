@@ -1,5 +1,7 @@
 "use strict"; 
 
+const runEvents = require("./events");
+
 let outputDark = document.getElementById('output-dark');
 var checkbox = document.querySelector("input[name=checkbox]");
 
@@ -12,3 +14,5 @@ checkbox.addEventListener( 'change', function() {
         outputDark.classList.remove("twilight-zone-mode");
     }
 });
+
+runEvents.submitMessage();
