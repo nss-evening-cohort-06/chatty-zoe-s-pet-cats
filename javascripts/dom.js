@@ -7,23 +7,21 @@ let outputDiv = document.getElementById("message");
 const buildDomString = (statement) => {
 	
 	let domString = "";
-	domString += `<div>${words.value}`;
-	domString += `<button type="button" id="delete" class="btn btn-danger">Vanish</button>`;
-	domString += `<button type="button" id="edit" class="btn btn-warning">Edit</button>`;
+	domString += `<div>${statement}`;
+	domString += `<button type="button" class="btn btn-danger delete">Vanish</button>`;
+	domString += `<button type="button" class="btn btn-warning edit">Edit</button>`;
 	domString += `</div>`;
-	return domString;
+	printToDom(domString);
 };
 
 
 
-const printToDom = () => {
-	let statementDomString = buildDomString();
-	outputDiv.innerHTML += statementDomString;
+const printToDom = (domString) => {
+	outputDiv.innerHTML += domString;
 	words.value = "";
-	
 };
 
-comments.loadComments();
+// comments.loadComments();
 
 
 

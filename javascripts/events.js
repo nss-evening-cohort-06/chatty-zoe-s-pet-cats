@@ -3,18 +3,10 @@
 
 let comments = require("./main");
 let outputDark = document.getElementById('output-dark');
-let checkbox = document.querySelector("input[name=checkbox]");
 let LoadedMessages = document.getElementById("message");
+const outputText = document.getElementById("message");
 
-checkbox.addEventListener( 'change', function() {
-    if(this.checked) {
-        // Checkbox is checked..
-        outputDark.classList.add("twilight-zone-mode");
-    } else {
-        // Checkbox is not checked..
-        outputDark.classList.remove("twilight-zone-mode");
-    }
-});
+
 
 LoadedMessages.onload = () => {
     LoadedMessages.innerHTML = comments;
@@ -29,28 +21,41 @@ const inputText = document.getElementById("inputText");
 
 const remove = document.getElementById("delete");
 
+const clearText = document.getElementById("clear");
+
 
 const submitMessage = (e) => {
     submit.addEventListener("click", (e) => {
     console.log("submitMessage", e);
-    printDom();
+    printDom(inputText.value);
     });
 
 };
 
 const writeWordsOnEnter = (e) => {
-    submit.addEventListener("keypress", (e) => {
+    inputText.addEventListener("keypress", (e) => {
         if(e.keyCode === 13){
-            printDom();
+            printDom(inputText.value);
         }
+    });
+};
+
+const clearTextBox = (e) => {
+    clearText.addEventListener("click", (e) => {
+        console.log("clear", e);
+        inputText.value = "";
     });
 };
 
 
 
 // JS for "Twilight Mode" checkbox
+let outputLargeText = document.getElementById('output-text-large');
+let checkboxOne = document.querySelector("input[name=checkboxTwilight]");
+let checkboxTwo = document.querySelector("input[name=checkboxBiggerText]");
 
-checkbox.addEventListener( 'change', function() {
+checkboxOne.addEventListener( 'change', function() {
+    console.log(this);
     if(this.checked) {
         // Checkbox is checked..
         outputDark.classList.add("twilight-zone-mode");
@@ -64,7 +69,15 @@ checkbox.addEventListener( 'change', function() {
 
 
 // JS for "Make Text Bigger" checkbox
-
+checkboxTwo.addEventListener( 'change', function() {
+    if(this.checked) {
+        // Checkbox is checked..
+        outputLargeText.classList.add("makeItBigger");
+    } else {
+        // Checkbox is not checked..
+        outputLargeText.classList.remove("makeItBigger");
+    }
+});
 
 
 
@@ -82,7 +95,7 @@ const deleteMessage = (e) => {
 
 
 const events = {
-    submitMessage, writeWordsOnEnter
+    submitMessage, writeWordsOnEnter, clearTextBox, deleteMessage
  
 };
 module.exports = events;
