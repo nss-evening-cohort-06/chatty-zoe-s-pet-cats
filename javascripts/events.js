@@ -70,6 +70,16 @@ checkbox.addEventListener( 'change', function() {
 
 
 
+// //delete button function
+const deleteMessage = (e) => {
+	outputText.addEventListener('click', deleteMessage);
+	console.log("delete", e);
+  if(e.target.classList.contains('delete')){
+    console.log("yaaaaaaaaa!");
+    e.target.parentNode.remove();
+  }
+};
+
 
 const events = {
     submitMessage, writeWordsOnEnter
