@@ -39,9 +39,11 @@ const clearTextBox = (e) => {
 
 // JS for "Twilight Mode" checkbox
 let outputDark = document.getElementById('output-dark');
-let checkbox = document.querySelector("input[name=checkbox]");
+let outputLargeText = document.getElementById('output-text-large');
+let checkboxOne = document.querySelector("input[name=checkboxTwilight]");
+let checkboxTwo = document.querySelector("input[name=checkboxBiggerText]");
 
-checkbox.addEventListener( 'change', function() {
+checkboxOne.addEventListener( 'change', function() {
     if(this.checked) {
         // Checkbox is checked..
         outputDark.classList.add("twilight-zone-mode");
@@ -51,10 +53,18 @@ checkbox.addEventListener( 'change', function() {
     }
 });
 
-
-
-
 // JS for "Make Text Bigger" checkbox
+checkboxTwo.addEventListener( 'change', function() {
+    if(this.checked) {
+        // Checkbox is checked..
+        outputLargeText.classList.add("makeItBigger");
+    } else {
+        // Checkbox is not checked..
+        outputLargeText.classList.remove("makeItBigger");
+    }
+});
+
+
 
 
 
