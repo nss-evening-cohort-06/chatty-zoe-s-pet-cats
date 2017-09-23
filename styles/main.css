@@ -4,7 +4,8 @@
 	background:#A2A2A2;
 	position:fixed;
 	height: 500px;
-	width: 80em;  
+	width: 80em;
+	padding: 15px;  
 }
 
 .message {
@@ -21,5 +22,5 @@
 
 /*Make It Bigger*/
 .makeItBigger {
-	font-size: 10em;
+	font-size: 2em;
 }
