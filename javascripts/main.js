@@ -21,8 +21,10 @@ checkbox.addEventListener( 'change', function() {
 
 
 
+
 // JS for "Make Text Bigger" checkbox
  
+
 
 runEvents.submitMessage();
 
