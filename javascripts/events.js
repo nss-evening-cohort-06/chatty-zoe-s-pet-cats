@@ -23,7 +23,10 @@ const remove = document.getElementById("delete");
 
 const clearText = document.getElementById("clear");
 
+const clearBoard = document.getElementById("clearBoard");
 
+
+//print message when click on chat with aliens button
 const submitMessage = (e) => {
     submit.addEventListener("click", (e) => {
     console.log("submitMessage", e);
@@ -32,14 +35,16 @@ const submitMessage = (e) => {
 
 };
 
+//print message on enter press
 const writeWordsOnEnter = (e) => {
     inputText.addEventListener("keypress", (e) => {
         if(e.keyCode === 13){
-            printDom(inputText.value);
+        printDom(inputText.value);
         }
     });
 };
 
+//Abort Entry functionality
 const clearTextBox = (e) => {
     clearText.addEventListener("click", (e) => {
         console.log("clear", e);
@@ -47,6 +52,19 @@ const clearTextBox = (e) => {
     });
 };
 
+//Clear all messages from message board
+const clearAllMessages = (e) => {
+    document.getElementById("clearBoard").addEventListener("click", function(e){
+     console.log(e);
+     LoadedMessages.innerHTML = "";
+});
+};
+
+const disableBtn = () => {
+    if(outputText.innerHTML === "") {
+        clearBoard.disabled = true;
+    }
+};
 
 
 // JS for "Twilight Mode" checkbox
@@ -94,8 +112,10 @@ const deleteMessage = (e) => {
 };
 
 
+
+
 const events = {
-    submitMessage, writeWordsOnEnter, clearTextBox, deleteMessage
+    submitMessage, writeWordsOnEnter, clearTextBox, deleteMessage, clearAllMessages, disableBtn
  
 };
 module.exports = events;
