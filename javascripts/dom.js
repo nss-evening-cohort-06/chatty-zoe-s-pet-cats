@@ -8,7 +8,6 @@ const buildDomString = (statement) => {
 	let domString = "";
 	domString += `<div>${statement}`;
 	domString += `<button type="button" class="btn btn-danger delete">Vanish</button>`;
-	domString += `<button type="button" class="btn btn-warning edit">Edit</button>`;
 	domString += `</div>`;
 	printToDom(domString);
 };
