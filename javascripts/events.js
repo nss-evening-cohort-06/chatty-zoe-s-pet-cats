@@ -49,6 +49,8 @@ const clearTextBox = (e) => {
 
 
 
+
+
 // JS for "Twilight Mode" checkbox
 let outputLargeText = document.getElementById('output-text-large');
 let checkboxOne = document.querySelector("input[name=checkboxTwilight]");
