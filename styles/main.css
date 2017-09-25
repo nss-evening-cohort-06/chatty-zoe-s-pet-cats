@@ -17,6 +17,8 @@ body {
 }
 
 .message {
+    height: 400px;
+    width: 75em;
     padding: 4em 0 0 0;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -35,4 +37,14 @@ body {
 /*Make It Bigger*/
 .makeItBigger {
 	font-size: 2em;
+}
+
+.little-bit-of-padding {
+	padding-top: 8px;
+}
+
+.message .btn {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
 }
