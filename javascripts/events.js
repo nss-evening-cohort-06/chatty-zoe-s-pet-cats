@@ -1,16 +1,16 @@
 "use strict";
 
 
-let comments = require("./main");
+//let comments = require("./main");
 let outputDark = document.getElementById('output-dark');
 let LoadedMessages = document.getElementById("message");
-const outputText = document.getElementById("message");
+//const outputText = document.getElementById("message");
 
 
 
-LoadedMessages.onload = () => {
-    LoadedMessages.innerHTML = comments;
-};
+// LoadedMessages.onload = () => {
+//     LoadedMessages.innerHTML = comments;
+// };
 
 
 const printDom = require("./dom");
@@ -23,7 +23,10 @@ const remove = document.getElementById("delete");
 
 const clearText = document.getElementById("clear");
 
+const clearBoard = document.getElementById("clearBoard");
 
+
+//print message when click on chat with aliens button
 const submitMessage = (e) => {
     submit.addEventListener("click", (e) => {
     console.log("submitMessage", e);
@@ -32,14 +35,16 @@ const submitMessage = (e) => {
 
 };
 
+//print message on enter press
 const writeWordsOnEnter = (e) => {
     inputText.addEventListener("keypress", (e) => {
         if(e.keyCode === 13){
-            printDom(inputText.value);
+        printDom(inputText.value);
         }
     });
 };
 
+//Abort Entry functionality
 const clearTextBox = (e) => {
     clearText.addEventListener("click", (e) => {
         console.log("clear", e);
@@ -47,6 +52,19 @@ const clearTextBox = (e) => {
     });
 };
 
+//Clear all messages from message board
+const clearAllMessages = (e) => {
+    clearBoard.addEventListener("click", function(e){
+     console.log(e);
+     LoadedMessages.innerHTML = "";
+});
+};
+
+const disableBtn = () => {
+    if(LoadedMessages.innerHTML === "") {
+        clearBoard.disabled = true;
+    }
+};
 
 
 
@@ -87,17 +105,18 @@ checkboxTwo.addEventListener( 'change', function() {
 
 // //delete button function
 const deleteMessage = (e) => {
-	outputText.addEventListener('click', deleteMessage);
-	console.log("delete", e);
-  if(e.target.classList.contains('delete')){
-    console.log("yaaaaaaaaa!");
-    e.target.parentNode.remove();
-  }
+	LoadedMessages.addEventListener('click', () => {
+      if(e.target.classList.contains('delete')){
+        e.target.parentNode.remove();
+      }
+    });
 };
 
 
+
+
 const events = {
-    submitMessage, writeWordsOnEnter, clearTextBox, deleteMessage
+    submitMessage, writeWordsOnEnter, clearTextBox, deleteMessage, clearAllMessages, disableBtn
  
 };
 module.exports = events;
