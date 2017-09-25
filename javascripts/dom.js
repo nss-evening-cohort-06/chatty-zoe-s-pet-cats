@@ -1,6 +1,5 @@
 "use strict";
 
-let comments = require('./data');
 let words = document.getElementById("inputText");
 let outputDiv = document.getElementById("message");
 
@@ -21,7 +20,7 @@ const printToDom = (domString) => {
 	words.value = "";
 };
 
-// comments.loadComments();
+
 
 
 
