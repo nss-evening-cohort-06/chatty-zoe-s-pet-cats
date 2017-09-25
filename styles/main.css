@@ -38,3 +38,13 @@ body {
 .makeItBigger {
 	font-size: 2em;
 }
+
+.little-bit-of-padding {
+	padding-top: 8px;
+}
+
+.message .btn {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
