@@ -1,16 +1,16 @@
 "use strict";
 
 
-let comments = require("./main");
+//let comments = require("./main");
 let outputDark = document.getElementById('output-dark');
 let LoadedMessages = document.getElementById("message");
-const outputText = document.getElementById("message");
+//const outputText = document.getElementById("message");
 
 
 
-LoadedMessages.onload = () => {
-    LoadedMessages.innerHTML = comments;
-};
+// LoadedMessages.onload = () => {
+//     LoadedMessages.innerHTML = comments;
+// };
 
 
 const printDom = require("./dom");
@@ -54,14 +54,14 @@ const clearTextBox = (e) => {
 
 //Clear all messages from message board
 const clearAllMessages = (e) => {
-    document.getElementById("clearBoard").addEventListener("click", function(e){
+    clearBoard.addEventListener("click", function(e){
      console.log(e);
      LoadedMessages.innerHTML = "";
 });
 };
 
 const disableBtn = () => {
-    if(outputText.innerHTML === "") {
+    if(LoadedMessages.innerHTML === "") {
         clearBoard.disabled = true;
     }
 };
@@ -103,12 +103,11 @@ checkboxTwo.addEventListener( 'change', function() {
 
 // //delete button function
 const deleteMessage = (e) => {
-	outputText.addEventListener('click', deleteMessage);
-	console.log("delete", e);
-  if(e.target.classList.contains('delete')){
-    console.log("yaaaaaaaaa!");
-    e.target.parentNode.remove();
-  }
+	LoadedMessages.addEventListener('click', () => {
+      if(e.target.classList.contains('delete')){
+        e.target.parentNode.remove();
+      }
+    });
 };
 
 

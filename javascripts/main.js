@@ -17,5 +17,3 @@ runEvents.disableBtn();
 
 
 loadComments.loadComments();
-
-runEvents.deleteMessage();
