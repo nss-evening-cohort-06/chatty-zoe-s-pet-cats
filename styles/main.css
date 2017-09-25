@@ -9,7 +9,7 @@ body {
 }
 
 .outputContainer {
-	background: rgba(162,162,162,.5);
+	background: rgba(255,255,255,.7);
 	position:fixed;
 	height: 500px;
 	width: 80em;
@@ -19,6 +19,8 @@ body {
 .message {
 	height: 400px;
 	width: 75em;
+    height: 400px;
+    width: 100%;
     padding: 4em 0 0 0;
     overflow-x: hidden;
     overflow-y: scroll;
