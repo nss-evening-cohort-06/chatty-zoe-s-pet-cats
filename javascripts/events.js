@@ -104,8 +104,8 @@ checkboxTwo.addEventListener( 'change', function() {
 
 
 // //delete button function
-const deleteMessage = (e) => {
-	LoadedMessages.addEventListener('click', () => {
+const deleteMessage = () => {
+	LoadedMessages.addEventListener('click', (e) => {
       if(e.target.classList.contains('delete')){
         e.target.parentNode.remove();
       }
