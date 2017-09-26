@@ -1,6 +1,8 @@
 # Chatty Group Project
 
-## ~~Requirements~~ Things we did:
+# :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: 
+
+## ~~Requirements~~/  Things we did: :white_check_mark:
 * Use Bootstrap
 * Complete 1 of the bonus items
 * Balanced github contributions
@@ -8,11 +10,11 @@
 * No grunt errors
 * Use Browserify
 
-# Have you ever wanted to chat with aliens?
+# Have you ever wanted to chat with aliens? :speech_balloon:
 * Send a message to the aliens
 * See other people's messages to the aliens
 * Delete your message, because they are 14,000 lightyears away and will never see it
-* You can also delete other people's messages, which means other people can delete your messages too...sorry
+* You can also delete other people's messages, which means other people can delete your messages too...sorry 
 * __Abduction feature COMING SOON__
 
 ## What you gotta do:
@@ -33,5 +35,14 @@ This will:
  - make sure everything is linty-free
  - creat you a nice ```app.js``` file
  
- # THEN PHONE HOME
- ![Screen shot video of app](/relative/path/to/img.jpg?raw=true "Optional Title")
+ # THEN PHONE HOME :telephone_receiver:
+ ![(https://media.giphy.com/media/3ov9jEt25ZCU0ky6E8/giphy.gif)](https://media.giphy.com/media/3ov9jEt25ZCU0ky6E8/giphy.gif)
+ 
+ 
+ # Contributors
+ * Anna Dolan
+ * David Dassau
+ * Eric Holman
+ * Kelly Stoops
+ 
+ # :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: :alien: 
