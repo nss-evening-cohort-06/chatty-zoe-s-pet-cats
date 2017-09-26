@@ -23,8 +23,8 @@ cd Workspace/group_projects/spa
 git clone git@github.com:nss-evening-cohort-06/chatty-zoe-s-pet-cats.git
 cd /lib
 * maybe open a new tab here *
-npm init
-npm install grunt grunt-contrib-jshint matchdep grunt-contrib-watch jshint-stylish --save-dev
+npm init (creates package.json file)
+npm install grunt grunt-contrib-jshint matchdep grunt-contrib-watch jshint-stylish --save-dev (creates node_modules)
 grunt
 ```
 This will:
