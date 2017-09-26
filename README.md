@@ -4,7 +4,7 @@
 
 ## ~~Requirements~~/  Things we did: :white_check_mark:
 * Use Bootstrap
-* Complete 1 of the bonus items
+* Complete 1 of the bonus items ¯\_(ツ)_/¯
 * Balanced github contributions
 * Completed Readme (^-^)
 * No grunt errors
