@@ -1,28 +1,12 @@
 "use strict";
 
-
-//let comments = require("./main");
+const printDom = require("./dom");
 let outputDark = document.getElementById('output-dark');
 let LoadedMessages = document.getElementById("message");
-//const outputText = document.getElementById("message");
-
-
-
-// LoadedMessages.onload = () => {
-//     LoadedMessages.innerHTML = comments;
-// };
-
-
-const printDom = require("./dom");
-
 const submit = document.getElementById("submit");
-
 const inputText = document.getElementById("inputText");
-
 const remove = document.getElementById("delete");
-
 const clearText = document.getElementById("clear");
-
 const clearBoard = document.getElementById("clearBoard");
 
 
@@ -32,7 +16,6 @@ const submitMessage = (e) => {
     console.log("submitMessage", e);
     printDom(inputText.value);
     });
-
 };
 
 //print message on enter press
@@ -44,7 +27,7 @@ const writeWordsOnEnter = (e) => {
     });
 };
 
-//Abort Entry functionality
+//Abort Entry functionality - clears input field
 const clearTextBox = (e) => {
     clearText.addEventListener("click", (e) => {
         console.log("clear", e);
@@ -67,13 +50,12 @@ const disableBtn = () => {
 };
 
 
-
-
-// JS for "Twilight Mode" checkbox
+// Event listeners for Checkboxes
 let outputLargeText = document.getElementById('output-text-large');
 let checkboxOne = document.querySelector("input[name=checkboxTwilight]");
 let checkboxTwo = document.querySelector("input[name=checkboxBiggerText]");
 
+// JS for "Twilight Mode" checkbox
 checkboxOne.addEventListener( 'change', function() {
     console.log(this);
     if(this.checked) {
@@ -84,9 +66,6 @@ checkboxOne.addEventListener( 'change', function() {
         outputDark.classList.remove("twilight-zone-mode");
     }
 });
-
-
-
 
 // JS for "Make Text Bigger" checkbox
 checkboxTwo.addEventListener( 'change', function() {
@@ -101,9 +80,7 @@ checkboxTwo.addEventListener( 'change', function() {
 
 
 
-
-
-// //delete button function
+// //delete button function - deletes messages in output div
 const deleteMessage = () => {
 	LoadedMessages.addEventListener('click', (e) => {
       if(e.target.classList.contains('delete')){
@@ -113,12 +90,11 @@ const deleteMessage = () => {
 };
 
 
-
-
 const events = {
     submitMessage, writeWordsOnEnter, clearTextBox, deleteMessage, clearAllMessages, disableBtn
- 
 };
+
+
 module.exports = events;
 
 
