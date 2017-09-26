@@ -23,12 +23,13 @@ cd Workspace/group_projects/spa
 git clone git@github.com:nss-evening-cohort-06/chatty-zoe-s-pet-cats.git
 cd /lib
 * maybe open a new tab here *
-npm init (creates package.json file)
-npm install grunt grunt-contrib-jshint matchdep grunt-contrib-watch jshint-stylish --save-dev (creates node_modules)
+npm init 
+npm install grunt grunt-contrib-jshint matchdep grunt-contrib-watch jshint-stylish --save-dev 
 grunt
 ```
 This will:
  - put all the files in the right place
+ - create package.json file and node_modules
  - make sure everything is linty-free
  - creat you a nice ```app.js``` file
  
