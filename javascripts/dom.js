@@ -20,9 +20,6 @@ const printToDom = (domString) => {
 };
 
 
-
-
-
 module.exports = buildDomString;
 
 
