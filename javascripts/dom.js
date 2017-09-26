@@ -6,9 +6,9 @@ let outputDiv = document.getElementById("message");
 const buildDomString = (statement) => {
 	
 	let domString = "";
-	domString += `<div>${statement}`;
-	domString += `<button type="button" class="btn btn-danger delete">Vanish</button>`;
-	domString += `</div>`;
+	domString +=       `<div>${statement}<br />`;
+	domString +=       `<button type="button" class="btn btn-success delete">Vanish</button>`;
+	domString +=       `</div>`;
 	printToDom(domString);
 };
 
