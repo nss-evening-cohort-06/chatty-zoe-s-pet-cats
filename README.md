@@ -41,7 +41,7 @@ This will:
  
  # Contributors
  * Anna Dolan
- * David Dassau AKA "SPACE DADDY"
+ * David Dassau - __AKA "SPACE DADDY"__
  * Eric Holman
  * Kelly Stoops
  
