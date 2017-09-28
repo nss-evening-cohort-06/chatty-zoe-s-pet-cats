@@ -31,6 +31,7 @@ const submitMessage = (e) => {
     submit.addEventListener("click", (e) => {
     console.log("submitMessage", e);
     printDom(inputText.value);
+    disableBtn();
     });
 
 };
@@ -40,6 +41,7 @@ const writeWordsOnEnter = (e) => {
     inputText.addEventListener("keypress", (e) => {
         if(e.keyCode === 13){
         printDom(inputText.value);
+        disableBtn();
         }
     });
 };
@@ -57,12 +59,16 @@ const clearAllMessages = (e) => {
     clearBoard.addEventListener("click", function(e){
      console.log(e);
      LoadedMessages.innerHTML = "";
+     disableBtn();
 });
 };
 
 const disableBtn = () => {
+    console.log("message", LoadedMessages.innerHTML);
     if(LoadedMessages.innerHTML === "") {
         clearBoard.disabled = true;
+    }else {
+      clearBoard.disabled = false;
     }
 };
 
@@ -108,6 +114,7 @@ const deleteMessage = () => {
 	LoadedMessages.addEventListener('click', (e) => {
       if(e.target.classList.contains('delete')){
         e.target.parentNode.remove();
+        disableBtn();
       }
     });
 };
